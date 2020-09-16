@@ -11,8 +11,6 @@ def line(people)
 end
 
 def take_a_number(current_people, new_person) 
-    positions = current_people.map.with_index(1) {|person, index| "#{index}. #{person}"}
-    positions.unshift("The line is currently:")
-    output = positions.join(" ")
-    puts output
+    
+    puts "Welcome, #{new_person}, you are number #{current_people.size+1} in line."
 end
