@@ -11,6 +11,10 @@ def line(people)
 end
 
 def take_a_number(current_people, new_person) 
-    
-    puts "Welcome, #{new_person}. You are number #{current_people.size+1} in line."
+    if current_people.empty?
+      current_people << new_person
+      puts "Welcome, #{new_person}. You are number #{current_people.size+1} in line."
+    else
+      puts "Welcome, #{new_person}. You are number #{current_people.size+1} in line."
+    end
 end
