@@ -15,6 +15,10 @@ def take_a_number(current_people, new_person)
       puts "Welcome, #{new_person}. You are number #{current_people.size} in line."
 end
 
-def now_serving
-  
+def now_serving(people)
+  if people.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    "yeet"
+  end
 end
