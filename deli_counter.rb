@@ -13,8 +13,8 @@ end
 def take_a_number(current_people, new_person) 
     if current_people.empty?
       current_people << new_person
-      puts "Welcome, #{new_person}. You are number #{current_people.size+1} in line."
+      puts "Welcome, #{new_person}. You are number #{current_people.size} in line."
     else
-      puts "Welcome, #{new_person}. You are number #{current_people.size+1} in line."
+      puts "Welcome, #{new_person}. You are number #{current_people.size} in line."
     end
 end
